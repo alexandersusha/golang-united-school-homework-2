@@ -38,7 +38,7 @@ func (s sidesNumber) CalcSquare(sideLen float64) float64 {
 
 func triangleArea(sideLen float64) float64 {
 	if sideLen != 0.0 {
-		return math.Pow(2, sideLen) * math.Sqrt(3) / 4
+		return math.Pow(sideLen, 2) * math.Sqrt(3) / 4
 	} else {
 		return 0.0
 	}
@@ -46,7 +46,7 @@ func triangleArea(sideLen float64) float64 {
 
 func squareArea(sideLen float64) float64 {
 	if sideLen != 0.0 {
-		return math.Pow(2, sideLen)
+		return math.Pow(sideLen, 2)
 	} else {
 		return 0.0
 	}
@@ -55,7 +55,7 @@ func squareArea(sideLen float64) float64 {
 
 func circleArea(sideLen float64) float64 {
 	if sideLen != 0.0 {
-		return math.Pi * math.Pow(2, sideLen)
+		return math.Pi * math.Pow(sideLen, 2)
 	} else {
 		return 0.0
 	}
